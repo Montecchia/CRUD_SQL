@@ -255,7 +255,7 @@ def ActualizarSucursales():
     for fila in Bd.MostrarSucursales():
         sucursales += str(fila[0])
         sucursalesTree.insert("","end",values=fila)
-    campoSucursal.set(sucursales)
+        campoSucursal["values"] = sucursales
 
 Interfaz() 
 
